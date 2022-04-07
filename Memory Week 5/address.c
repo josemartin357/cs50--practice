@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
 
-// Notes: In C, a variable with the value &n; will give you the address of that number. You need to use asterisk in name of variable. For example: int *p = &n;
-
 int main(void)
 {
     int n = 50;
@@ -15,6 +13,9 @@ int main(void)
     // Testing the dereference operator
     printf("%i\n", *p);
 }
+
+// Pointers
+// Notes: In C, a variable with the value &n; will give you the address of that number. You need to use asterisk in name of variable. For example: int *p = &n;
 
 
 // Dereference operator
