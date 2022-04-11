@@ -19,6 +19,7 @@ int main(void)
     //testing with numbers 
     int numbers[]= {4, 6, 8, 2, 7, 5, 0};
     // printing each int using pointer arithmetic
+    // An array can also be treated as the address of the first element in that array. The difference is that there is no secret \0.
     printf("%i\n", *numbers);
     printf("%i\n", *(numbers + 1));
     printf("%i\n", *(numbers + 2));
