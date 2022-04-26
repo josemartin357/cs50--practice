@@ -6,9 +6,10 @@
 // reference issue
 // void swap(int a, int b);
 
-// reference solution
+// reference solution. Passing pointer in function swap
 void swap(int *a, int *b);
 
+// FIRST in memory (solution): variable x holds value 1 in address 0x123 (sample address). And variable y holds value 2 in addres 0x456 (sample address)
 int main(void)
 {
     int x = 1;
@@ -34,10 +35,15 @@ int main(void)
 // }
 
 // reference solution
+// changing function to reference pointers.
+// SECOND in memory: a holds the value that it's in address 0x123, b holds the value that it's in address 0x456. a => 0x123; b => 0x456
 void swap(int *a, int *b)
 {
+    // THIRD in memory: tmp stores whatever is in the address of a. Here, the address of a holds the address 0x123 which is the value of 1. tmp = 1
     int tmp = *a;
+    // FOURTH in memory: the location of x (0x123) takes the value in the address of y (0x456). 0x123(x) = 2
     *a = *b; 
+    // FIFTH in memory: the location of y (0x456) takes the value of tmp which is 1. 0x456(y) = 1
     *b = tmp;
 
 }
