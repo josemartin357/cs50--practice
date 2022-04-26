@@ -29,6 +29,7 @@ int main(void)
     // Time passes
 
     // Now we need the list to be of size 4. Here we ask computer for a second chunk of memory (temporary) of size four
+    // In other words, allocating a new array of size 4
     int *tmp = malloc(4 * sizeof(int));
     // Making a safety check. If there is no more memory, clean and quit.
     if (tmp == NULL)
@@ -39,6 +40,7 @@ int main(void)
     }
 
     // Copy values of list of size 3 into list of size 4
+    // In other words, copying numbers from an old array into new one
     for (int i = 0; i < 3; i++)
     {
         tmp[i] = list[i];
