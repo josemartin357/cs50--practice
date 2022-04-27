@@ -1,0 +1,37 @@
+Python notes
+
+SYNTAX
+
+- In comparison with C, python is more similar to the plain english language.
+- Python doesnt require semi-colon most of the time.
+- In variables, programmer dont have to tell computer what data type is being used. Instead, programming language will interpret it depending on context.
+- The f before the double quotes indicates that this is a format string, which will allow us to use curly braces, {}, to include variables that should be substituted, or interpolated. 
+- ++ or -- doesnt exist in Python; instead use += or -=
+- Conditionals dont require parenthesis (in boolean expressions), instead use colon. Subsequent lines need to be indented. Indetention in Python is IMPORTANT.
+- elif replaces else if
+- Lists are more like linked lists rather than arrays.
+- Python has a function called range that gives you a range of values from 0 on up to, but not through a value. It takes more arguments as well.
+- Built-in data types:
+    bool, True or False
+    float, real numbers
+    int, integers which can grow as needed
+    str, strings
+- Other types in Python include:
+    range, sequence of numbers
+    list, sequence of mutable values, or values we can change
+    tuple, sequence of immutable values
+    dict, dictionaries, collection of key/value pairs, like a hash table
+    set, collection of unique values, or values without duplicates
+- The CS50 library for Python includes functions for getting user input as well:
+    get_float
+    get_int
+    get_string
+
+INTERPRETING CODE
+
+- Python will interpret the language for the programmer; no need to compile it to zeros and ones.
+- Instead, you run the code and let computer interpret it.
+
+LIBRARIES
+
+- Python is an Object Oriented Programming Language; it uses objects which encapsulates vales and functions.
