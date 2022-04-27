@@ -11,6 +11,7 @@ SYNTAX
 - elif replaces else if
 - Lists are more like linked lists rather than arrays.
 - Python has a function called range that gives you a range of values from 0 on up to, but not through a value. It takes more arguments as well.
+- Python doesnt have constants.
 - Built-in data types:
     bool, True or False
     float, real numbers
@@ -35,3 +36,6 @@ INTERPRETING CODE
 LIBRARIES
 
 - Python is an Object Oriented Programming Language; it uses objects which encapsulates vales and functions.
+
+DICTIONARY.PY 
+rstrip() strips off from right end the new line 
