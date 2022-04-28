@@ -27,6 +27,7 @@ SYNTAX
     get_float
     get_int
     get_string
+- Loops: Python has a for loop and while loop. They can be used to recreate a do while loop.
 
 INTERPRETING CODE
 
