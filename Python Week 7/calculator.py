@@ -54,7 +54,7 @@ x = int(input("x: "))
 # Prompt user for y
 y = int(input("y: "))
 # Divide x by y
-# if you wanna avoid the decimals use //
+# if you wanna avoid the decimals use double backslash //
 z = x / y
 print(z)
 

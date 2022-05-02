@@ -26,7 +26,7 @@
 # for i in range(n):
 #     print("#")
 
-### VERSION 3 ###
+# ## VERSION 3 ###
 # # Prints a column of bricks, using a helper function to get input
 # from cs50 import get_int
 # # main function
@@ -72,10 +72,10 @@
 ### VERSION 5 ###
 # Prints a row of 4 question marks with a loop
 # for i in range(4):
-#     using end named argument to end every line what that value; instead of the \n standard in python
+#     # using end named argument to end every line what that value; instead of the \n standard in python
 #     print("?", end="")
 # print()
-#Note: if a print function is not called again, the output will be ????%
+# Note: if a print function is not called again, the output will be ????%
 
 
 ### VERSION 6 ###
@@ -96,3 +96,41 @@
 # Prints a 3-by-3 grid of bricks with loop and * operator
 # for i in range(3):
 #     print("#" * 3)
+
+### PRACTICE VERSION ###
+# main function calls value returned from get_height and runs loop
+# def main():
+#     # object stores value passed in helper function
+#     height = get_height()
+#     # loop and print
+#     for i in range(height):
+#         print("#")
+# # do while loop asks for input and checks if value higher than 0. Then, returns n value of function
+# def get_height():
+#     while True:
+#         n = int(input("Height: "))
+#         if n > 0:
+#             break
+#     return n
+# # execute main function
+# main()
+
+## PRACTICE VERSION 2 ##
+# main function defines object which will carry value of helper function and runs a loop to print
+# def main():
+#     height = get_height()
+#     for i in range(height):
+#         print("#")
+# # helper function with except valueError
+# def get_height():
+#     while True:
+#         try:
+#             n=int(input("Height: "))
+#             if n > 0:
+#                 break
+#         except ValueError:
+#             print("Not a number")
+#     return n
+
+# main()
+

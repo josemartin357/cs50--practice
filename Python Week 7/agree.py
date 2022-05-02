@@ -42,13 +42,24 @@
 #     print("Not agreed.")
 
 ### PYTHON VERSION 3 ###
-# Logical operators, using regular expressions
-import re
-from cs50 import get_string
+# # Logical operators, using regular expressions
+# import re
+# from cs50 import get_string
+# # Prompt user to agree
+# s = get_string("Do you agree? ")
+# # Check whether agreed
+# if re.search("^y(es)?$", s, re.IGNORECASE):
+#     print("Agreed.")
+# elif re.search("^no?$", s, re.IGNORECASE):
+#     print("Not agreed.")
+
+# ANOTHER VERSION
 # Prompt user to agree
-s = get_string("Do you agree? ")
+s = input("Do you agree? ").lower()
 # Check whether agreed
-if re.search("^y(es)?$", s, re.IGNORECASE):
+if s in ["y", "yes"]:
     print("Agreed.")
-elif re.search("^no?$", s, re.IGNORECASE):
+elif s in ["n", "no"]:
     print("Not agreed.")
+else:
+    print("If you agree, enter y or yes. If you disagree, enter n or no")

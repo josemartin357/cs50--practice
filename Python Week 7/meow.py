@@ -79,8 +79,21 @@
 
 ### PYTHON VERSION 4 ###
 # Abstraction with parameterization
+# def main():
+#     meow(3)
+# # Meow some number of times
+# def meow(n):
+#     for i in range(n):
+#         print("meow")
+# main()
+
+# ANOTHER VERSION
 def main():
-    meow(3)
+    try:
+        n = int(input("How many meows? "))
+        meow(n)
+    except ValueError:
+        print("You need to enter a number")
 # Meow some number of times
 def meow(n):
     for i in range(n):
