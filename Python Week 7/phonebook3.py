@@ -8,6 +8,7 @@ name = get_string("Name: ")
 number = get_string("Number: ")
 
 # Open CSV file
+# This way the program will close the file after we are finished. It avoids memory leak
 with open("phonebook.csv", "a") as file:
 
     # Print to file

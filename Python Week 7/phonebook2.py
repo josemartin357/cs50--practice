@@ -12,7 +12,7 @@ name = get_string("Name: ")
 number = get_string("Number: ")
 
 # Print to file in next two lines
-# call csv.writer to create a writer object from the file
+# call csv.writer to create a writer object from the file. In other words, variable writer has the writer rights in the file
 writer = csv.writer(file)
 # we can use a method inside it, writer.writerow, to write a list as a row.
 writer.writerow([name, number])
