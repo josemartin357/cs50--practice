@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<!-- Demonstrates keyup and template literals -->
+<!-- Here we edit inside html using template literals -->
+<html lang="en">
+  <head>
+    <script>
+      // program fires when all nodes in DOM tree have been fired
+      document.addEventListener("DOMContentLoaded", function () {
+        // make a variable for the query selector of the input tag
+        let input = document.querySelector("input");
+        // we listen for a keyup
+        // The keyup event is sent to an element when the user releases a key on the keyboard.
+        input.addEventListener("keyup", function (event) {
+          // we make a variable for the query selector of the p tag
+          let name = document.querySelector("p");
+          // if input has a value, when we edit name variable (in html) as every keyup event happens
+          // in other words, for every key pressed, name will reflect it
+          if (input.value) {
+            name.innerHTML = `hello, ${input.value}`;
+          } else {
+            name.innerHTML = "hello, whoever you are";
+          }
+        });
+      });
+    </script>
+    <title>hello</title>
+  </head>
+  <body>
+    <form>
+      <input autocomplete="off" autofocus placeholder="Name" type="text" />
+    </form>
+    <p></p>
+  </body>
+</html>

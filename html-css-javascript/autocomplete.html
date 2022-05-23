@@ -1,0 +1,39 @@
+<!-- Program listens for a keyup event in the input tag, and checks in WORDS to find matches -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>autocomplete</title>
+  </head>
+
+  <body>
+    <!-- in input, we void the autocomplete, and we places an autofocus to concentrate in this tag -->
+    <input autocomplete="off" autofocus placeholder="Query" type="text" />
+    <!-- setting initial empty unordered list -->
+    <ul></ul>
+    <!-- linking to js file which contains WORDS -->
+    <script src="large.js"></script>
+    <script>
+      // we make a variable for the input tag query selector
+      let input = document.querySelector("input");
+      //   listening for keyup events in input variable
+      input.addEventListener("keyup", function (event) {
+        //   setting initial html as empty
+        let html = "";
+        // 1st conditional. If input has a value ...
+        if (input.value) {
+          // we call every element in WORDS a word AND ...
+          for (word of WORDS) {
+            //   we check if one of those words contains the value of input ...
+            if (word.startsWith(input.value)) {
+              // and we give html a listed item (li) for every word match
+              html += `<li>${word}</li>`;
+            }
+          }
+        }
+        // and we give ul the new value of html
+        document.querySelector("ul").innerHTML = html;
+      });
+    </script>
+  </body>
+</html>

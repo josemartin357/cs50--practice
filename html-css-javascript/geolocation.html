@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- Program finds geographical location of user -->
+<!-- Here we  -->
+<html lang="en">
+  <head>
+    <title>geolocation</title>
+  </head>
+  <body>
+    <script>
+      // We use the navigator and geolocation objects
+      // info: https://www.w3schools.com/jsref/prop_nav_geolocation.asp
+      navigator.geolocation.getCurrentPosition(function (position) {
+        // we write latitude and longitude in the document
+        document.write(
+          position.coords.latitude + ", " + position.coords.longitude
+        );
+      });
+    </script>
+  </body>
+</html>

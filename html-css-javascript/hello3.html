@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!-- Demonstrates DOMContentLoaded -->
+<!-- The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading. -->
+
+<html lang="en">
+  <head>
+    <script>
+      // adding event listener and function
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () // using query selector to select the form and listen for a submit
+        {
+          document
+            .querySelector("form")
+            .addEventListener("submit", function (e) {
+              // alerting hello and the value of the query selector id name
+              alert("hello, " + document.querySelector("#name").value);
+              // we use prevent default
+              // The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. For example, this can be useful when: Clicking on a "Submit" button, prevent it from submitting a form. Clicking on a link, prevent the link from following the URL.
+              e.preventDefault();
+            });
+        }
+      );
+    </script>
+    <title>hello</title>
+  </head>
+  <body>
+    <form>
+      <input
+        autocomplete="off"
+        autofocus
+        id="name"
+        placeholder="Name"
+        type="text"
+      />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

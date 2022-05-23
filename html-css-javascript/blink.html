@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <script>
+      // Toggles visibility of greeting
+      function blink() {
+        // we grab the body from the DOM and turn it into a variable
+        let body = document.querySelector("body");
+        // we use css styling 'visbility' as part of a condition.
+        // if body is hidden ...
+        if (body.style.visibility == "hidden") {
+          // ... make it visible.
+          body.style.visibility = "visible";
+        }
+        // else, hide it.
+        else {
+          body.style.visibility = "hidden";
+        }
+      }
+
+      // Blink every 500ms (every 0.5 second)
+      // setInterval repeatedly calls a function
+      window.setInterval(blink, 500);
+    </script>
+    <title>blink</title>
+  </head>
+  <body>
+    hello, world
+  </body>
+</html>

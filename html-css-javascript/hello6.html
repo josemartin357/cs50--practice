@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!-- Program takes input in query selector and uses SpeechSynthesisUtterance to say value out loud -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance/SpeechSynthesisUtterance -->
+
+<html lang="en">
+  <head>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("form").addEventListener("submit", function (e) {
+          let name = document.querySelector("#name").value;
+          let utterance = new SpeechSynthesisUtterance(`hello, ${name}`);
+          window.speechSynthesis.speak(utterance);
+          e.preventDefault();
+        });
+      });
+    </script>
+    <title>title</title>
+  </head>
+  <body>
+    <form>
+      <input
+        autocomplete="off"
+        autofocus
+        id="name"
+        placeholder="Name"
+        type="text"
+      />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
