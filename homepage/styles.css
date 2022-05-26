@@ -1,0 +1,127 @@
+/* INDEX.HTML */
+/* navbar styling */
+.animate-nav-brand {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #2581fa81 67%,
+    #d9daef 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* jumbotron and cards styling */
+.jumbotron {
+  text-align: center;
+}
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+/* index footer styling */
+footer {
+  background-color: #007bff;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: whitesmoke;
+  font-size: large;
+}
+#footer-copyrights {
+  width: 100%;
+  text-align: center;
+}
+#footer-art-credit {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.a-footer {
+  color: whitesmoke;
+}
+
+/* ABOUT.HTML */
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.375em;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+/* .h-black {
+  color: #303030;
+} */
+
+.about-container {
+  padding: 60px 50px;
+}
+
+/* EXPERIENCE.HTML */
+.experience-header {
+  text-align: center;
+}
+
+/* CONTACT.HTML */
+.contact-section {
+  text-align: center;
+  margin: 5%;
+}
+
+.dark-text {
+  font-weight: bold;
+}
+
+.contact-hyperlinks {
+  color: black;
+  font-weight: lighter;
+}
+
+/* DARK MODE */
+
+.dark-mode {
+  background-color: rgb(66, 65, 65);
+  color: white;
+}
+
+.card-bg-color {
+  background-color: rgb(43, 42, 42);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.navbar-text-color {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-text-color-light {
+  color: whitesmoke;
+}
+
+.toggle-button {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
