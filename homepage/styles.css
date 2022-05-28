@@ -14,7 +14,6 @@
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -94,16 +93,20 @@ h4 {
   font-weight: bold;
 }
 
-.contact-hyperlinks {
+/* .contact-hyperlinks {
   color: black;
   font-weight: lighter;
-}
+} */
 
 /* DARK MODE */
 
 .dark-mode {
   background-color: rgb(66, 65, 65);
   color: white;
+}
+
+.light-mode {
+  background-color: #d9daef;
 }
 
 .card-bg-color {
@@ -124,4 +127,10 @@ h4 {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+}
+
+/* CONTACT.HTML */
+.contact-hyperlinks-dark {
+  color: whitesmoke;
+  font-weight: lighter;
 }
